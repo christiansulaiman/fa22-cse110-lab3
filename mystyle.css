@@ -41,6 +41,7 @@ li {
     background-color: bisque;
     color: #00FF00;
     font-size: 3ex;
+    list-style-type: disc;
 }
 button {
     background-color: gray;
@@ -86,4 +87,47 @@ footer {
         margin-left: 50px;
         height: 2px;
     }
+}
+.boldRed {
+    color: red;
+    font-weight: bold;
+}
+#secondPara {
+    text-align: center;
+    color: rgb(129, 65, 33);
+}
+*#firstPara{
+    border: 1px indianred;
+    color: olive;
+}
+p {
+    color: navy;
+}
+a[href^="#"] {
+    color: salmon;
+}
+:is(span, div){
+    background-color: yellowgreen;
+}
+li li {
+    list-style-type: circle;
+}
+div > span {
+    background-color: #00FF00;
+    color: rgb(47, 76, 49);
+}
+p ~ span {
+    color: azure;
+    border: 3px red solid;
+}
+li:first-of-type + li{
+    font-style: italic;
+    font-size: large;
+    color: red;
+}
+p.warning {
+    background-color: yellow;
+    color: crimson;
+    font: 2em;
+    font-size: larger;
 }

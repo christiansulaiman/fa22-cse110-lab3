@@ -15,9 +15,6 @@
       }
     </style>
   <link rel="stylesheet" href="mystyle.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <title>CSE 110 Lab2 HTML Exercise</title>
     <meta name="description" content="This is my lab2 attempt with practicing HTML">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -26,13 +23,34 @@
     <header>
         <div><h1>Restaurant Inventory Meeting Minutes</h1></div>
         <hr>
+        <p class="warning">CONTENTS OF THE MEETING MINUTES MAY NOT BE DISCLOSED TO OUTSIDE PERSONNEL</p>
         <nav>
             <ul>
-                <li><a href="#attendance">Attendance</a></li>
-                <li><a href="#agenda">Agenda</a></li>
-                <li><a href="#unfinished">Unfinished Business</a></li>
-                <li><a href="#new">New Business</a></li>
-                <li><a href="#comments">Additional Comments</a></li>
+                <li><a href="#attendance">Attendance</a>
+                  <ul>
+                    <li>Shows who attended the meeting</li>
+                  </ul>
+                </li>
+                <li><a href="#agenda">Agenda</a>
+                  <ul>
+                    <li>List of things to go over</li>
+                  </ul>
+                </li>
+                <li><a href="#unfinished">Unfinished Business</a>
+                  <ul>
+                    <li>Things we didn't get to go over last meeting</li>
+                  </ul>
+                </li>
+                <li><a href="#new">New Business</a>
+                  <ul>
+                    <li>New things to discuss that wasn't in the last meeting</li>
+                  </ul>
+                </li>
+                <li><a href="#comments">Additional Comments</a>
+                  <ul>
+                    <li>Any thoughts or comments</li>
+                  </ul>
+                </li>
             </ul>
         </nav>
     </header>
@@ -52,8 +70,8 @@
           <li><input type="checkbox" />Look over potential locations for new branch</li>
         </ol>
         <h2 id="unfinished"><b>Unfinished Business</b></h2>
-          Spend an hour next meeting going over the remaining potential locations<br>
-          Spend 10 minutes to catch absent staff up on things they missed
+          Spend <span class = "boldRed"> hour</span> next meeting going over the remaining potential locations<br>
+          Spend <span class = "boldRed">10 minutes</span> to catch absent staff up on things they missed
         <hr>
         <h2 id="new"><b>New Business</b></h2>
           <h3>Potential dessert suppliers</h3>
@@ -63,14 +81,22 @@
         <hr>
         <h2 id="comments"><b>Additional Comments</b></h2>
         <p style = "color: violet; text-align: center;"><span><i>Jake mentioned that some Chef's require certain new tools since our old ones are not up to par. On top of that several people have pointed out that some customers have been asking for larger portions to be available.</i></span></p>
+        <div>
+          <span>
+            That's it for the list of contents. Now we go on to the media stuff.
+          </span>
+        </div>
+        <p> Employees are welcome to: </p>
+        <span> leave the meeting if they choose to.</span>
+        <hr>
         <strong>Guilty Employee</strong>
         <audio src="audio.mp3" controls></audio>
         <details>
           <summary>Above is an admission of guilt by an anoynymous employee</summary>
-          <p>The employee above has mentioned how they refused to follow company guidelines even though it was stated <b><i>EXPLICITLY</i></b>.</p>
+          <p id = "firstPara">The employee above has mentioned how they refused to follow company guidelines even though it was stated <b><i>EXPLICITLY</i></b>.</p>
         </details>
         <hr>
-        <p>Video Recording of parts of the meeting</p>
+        <p id="secondPara">Video Recording of parts of the meeting</p>
         <video src="video.mp4" controls></video>
         <hr>
         <h2>Forms</h2>
