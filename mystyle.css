@@ -6,13 +6,16 @@ div {
     border-width: 2px;
     border-radius: 2px;
 }
+/* This is for my new 3rd party font */
 @font-face {
     font-family: "myFont";
     src: url(/fonts/BrunoAceSC-Regular.ttf);
 }
+/* Changing my background color */
 body {
     background-color: beige;
 }
+/* Changing my main header's style */
 h1 {
     font-family: "myFont";
     font-size: 3em;
@@ -22,6 +25,7 @@ h1 {
     height: 2px;
     display: flex;
 }
+/* Changing my sub header's style */
 h2 {
     font-family: "myFont";
     background-color: #C733FF;
@@ -30,6 +34,7 @@ h2 {
     line-height: 5vh;
     position: static;
 }
+/* Changing h3's style */
 h3 {
     background-color: rgb(55, 175, 255);
     color: seagreen;
@@ -37,12 +42,14 @@ h3 {
     width: 5vmax;
     display: flex;
 }
+/* Changing <li>'s style */
 li {
     background-color: bisque;
     color: #00FF00;
     font-size: 3ex;
     list-style-type: disc;
 }
+/* Changing button's colors, padding, and display */
 button {
     background-color: gray;
     color: red;
@@ -53,6 +60,7 @@ button {
     top: 25px;
     left: 25px;
 }
+/* Changing input's padding and maximum widths */
 input {
     padding-top: 0.3pc;
     padding-left: 0.3pc;
@@ -61,6 +69,7 @@ input {
     max-width: 20lh;
     min-width: none;
 }
+/* Turns button blue when hovering over it */
 button:hover {
     color: blue;
 }
@@ -77,6 +86,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+/* For devices with 800px width */
 @media (max-width: 800px) {
     body {
         background-color: chocolate;
@@ -88,6 +98,7 @@ footer {
         height: 2px;
     }
 }
+/* below are selectors part (some) others are already done above */
 .boldRed {
     color: red;
     font-weight: bold;
