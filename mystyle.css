@@ -1,0 +1,89 @@
+/* This is my first comment in CSS!*/
+div {
+    text-align: center;
+    border-style: solid;
+    border-color: maroon;
+    border-width: 2px;
+    border-radius: 2px;
+}
+@font-face {
+    font-family: "myFont";
+    src: url(/fonts/BrunoAceSC-Regular.ttf);
+}
+body {
+    background-color: beige;
+}
+h1 {
+    font-family: "myFont";
+    font-size: 3em;
+    background-color: hsl(30, 75, 50);
+    color: rgb(129, 65, 200);
+    margin-left: 50px;
+    height: 2px;
+    display: flex;
+}
+h2 {
+    font-family: "myFont";
+    background-color: #C733FF;
+    color: hsl(50, 80%, 40%);
+    margin: auto 0.1in;
+    line-height: 5vh;
+    position: static;
+}
+h3 {
+    background-color: rgb(55, 175, 255);
+    color: seagreen;
+    margin: 2pc 0pc 2pc 0pc;
+    width: 5vmax;
+    display: flex;
+}
+li {
+    background-color: bisque;
+    color: #00FF00;
+    font-size: 3ex;
+}
+button {
+    background-color: gray;
+    color: red;
+    padding: 0.5pc, 0.5pc, 0.5pc, 0.5pc;
+    text-decoration: dotted;
+    display: inline;
+    position: relative;
+    top: 25px;
+    left: 25px;
+}
+input {
+    padding-top: 0.3pc;
+    padding-left: 0.3pc;
+    padding-bottom: 0.3pc;
+    padding-right: 0.3pc;
+    max-width: 20lh;
+    min-width: none;
+}
+button:hover {
+    color: blue;
+}
+datalist {
+    display: flex;
+}
+fieldset {
+    display: grid;
+}
+select {
+    display: grid;
+}
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 800px) {
+    body {
+        background-color: chocolate;
+    }
+    h1 {
+        background-color: cyan;
+        color: green;
+        margin-left: 50px;
+        height: 2px;
+    }
+}
